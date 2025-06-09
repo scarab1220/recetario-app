@@ -26,5 +26,4 @@ function App() {
 
 export default App;
 
-// src/App.jsx
-// Componente principal de la aplicación
+// App principal que integra todo

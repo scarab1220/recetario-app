@@ -13,5 +13,6 @@ export default function RecipeList({ recipes }) {
     </div>
   );
 }
-// Muestra la lista de recetas
+
+// Muestra una lista de recetas
 
