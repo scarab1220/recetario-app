@@ -40,20 +40,3 @@
 .read-the-docs {
   color: #888;
 }
-
-.bg-custom-svg {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1009%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255, 255, 255, 1)'/%3e%3cpath d='M1343.7588959824675 638.018545881202L1432.91816995361 588.5967532980404 1314.2058440932963 479.5687386329073z' fill='rgba(28, 83, 142, 0.4)'/%3e%3cpath d='M35.41 135.5 a185.33 185.33 0 1 0 370.66 0 a185.33 185.33 0 1 0 -370.66 0z' fill='rgba(28, 83, 142, 0.4)'/%3e%3cpath d='M1237.54 447.7 a171.38 171.38 0 1 0 342.76 0 a171.38 171.38 0 1 0 -342.76 0z' fill='rgba(28, 83, 142, 0.4)'/%3e%3cpath d='M688.8854039308644 152.54338432895895L660.6125103700285 39.14700189927022 547.2161279403399 67.41989546010606 575.4890215011757 180.81627788979478z' fill='rgba(28, 83, 142, 0.4)'/%3e%3cpath d='M1439.6633142728238 400.37426727581294L1473.6496500235212 295.7750812469807 1369.050463994689 261.78874549628324 1335.0641282439915 366.38793152511545z' fill='rgba(28, 83, 142, 0.4)'/%3e%3cpath d='M978.7256000767026 96.24046388842777L1082.0869582997846 142.3779878597312 1073.4631688812647 43.807623758049246z' fill='rgba(28, 83, 142, 0.4)'/%3e%3cpath d='M258.37202889584 148.54934046982012L128.7783739527606 223.20568852453403 240.84326701757567 290.5410695427162z' fill='rgba(28, 83, 142, 0.4)'/%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1009'%3e%3crect width='1440' height='560' fill='%23ffffff'/%3e%3c/mask%3e%3c/style%3e%3c/defs%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-html, body {
-  background-color: #fff;
-  color: #222; /* color oscuro para modo claro */
-}
-
-.dark html, .dark body {
-  background-color: #1a202c; /* o el mismo color que uses en dark:bg-gray-900 */
-  color: #f3f4f6; /* gris muy claro para modo oscuro */
-}
