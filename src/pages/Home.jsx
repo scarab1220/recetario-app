@@ -7,12 +7,20 @@ import { searchRecipes } from "../services/api";
 function App() {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSearch = async (query) => {
     setLoading(true);
-    const results = await searchRecipes(query);
-    setRecipes(results);
-    setLoading(false);
+    setError("");
+    try {
+      const results = await searchRecipes(query);
+      setRecipes(results);
+    } catch (err) {
+      setError("No hay conexión o ha ocurrido un error. Intenta de nuevo.");
+      setRecipes([]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -29,6 +37,17 @@ function App() {
             transition={{ duration: 0.3 }}
           >
             Buscando recetas...
+          </motion.p>
+        ) : error ? (
+          <motion.p
+            key="error"
+            className="text-center text-red-600 bg-white/70 rounded-xl p-4 mx-auto w-fit shadow-md"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.3 }}
+          >
+            {error}
           </motion.p>
         ) : (
           <motion.div
