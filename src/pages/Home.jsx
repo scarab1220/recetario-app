@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "../components/Header";
 import SearchForm from "../components/SearchForm";
 import RecipeList from "../components/RecipeList";
 import { searchRecipes } from "../services/api";
@@ -17,7 +16,6 @@ function App() {
 
   return (
     <div>
-      <Header />
       <SearchForm onSearch={handleSearch} />
       {loading ? <p className="text-center">Buscando recetas...</p> : <RecipeList recipes={recipes} />}
     </div>
