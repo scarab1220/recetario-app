@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import RecipeDetail from './components/RecipeDetail'
 import Header from './components/Header'
 import "./index.css";
+import Favorites from './pages/Favorites';
 
 
 export default function App() {
@@ -12,7 +13,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/receta/:id" element={<RecipeDetail />} />
+        <Route path="/favoritos" element={<Favorites />} />
       </Routes>
+
     </>
   )
 }

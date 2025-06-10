@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { getRecipeById } from '../services/api'
-import useFavorites from '../hooks/useFavorites'
+import { useFavorites } from '../hooks/useFavorites'
 
 export default function RecipeDetail() {
   const { id } = useParams()
