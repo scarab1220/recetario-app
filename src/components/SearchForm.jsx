@@ -21,7 +21,7 @@ export default function SearchForm({ onSearch }) {
     >
       <motion.input
         type="text"
-        className="border rounded px-3 py-2 w-64"
+        className="border-none rounded-full px-5 py-3 w-72 bg-white/40 backdrop-blur-md shadow-md placeholder:text-gray-700 focus:outline-none"
         placeholder="Buscar receta..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
@@ -29,9 +29,9 @@ export default function SearchForm({ onSearch }) {
         transition={{ type: "spring", stiffness: 300 }}
       />
       <motion.button
-        className="bg-blue-600 text-white px-4 py-2 rounded"
+        className="bg-blue-600/70 text-white px-6 py-3 rounded-full shadow-md backdrop-blur-md hover:bg-blue-700/80 transition"
         whileHover={{ scale: 1.08 }}
-        whileTap={{ scale: 0.95 }}
+        whileTap={{ scale: 1.5 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
         Buscar
